@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-15T08:49:07 EDT" name="Suite" finished-at="2024-05-15T08:49:25 EDT" duration-ms="17290">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest@1aafa419]" name="submitOrder" class="FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2024-05-15T08:49:07 EDT" name="Error Validation Test" finished-at="2024-05-15T08:49:07 EDT" duration-ms="11">
+    </test> <!-- Error Validation Test -->
+    <test started-at="2024-05-15T08:49:07 EDT" name="Submit Order Test" finished-at="2024-05-15T08:49:25 EDT" duration-ms="17290">
+      <class name="FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest@1aafa419]" started-at="2024-05-15T08:49:07 EDT" name="launchApplication" finished-at="2024-05-15T08:49:14 EDT" duration-ms="6350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest@1aafa419]" started-at="2024-05-15T08:49:14 EDT" name="submitOrder" data-provider="getData" finished-at="2024-05-15T08:49:20 EDT" duration-ms="5825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Ilikeautomation@#07, product=ZARA COAT 3, email=osama.nadeem@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest@1aafa419]" started-at="2024-05-15T08:49:20 EDT" name="tearDown" finished-at="2024-05-15T08:49:20 EDT" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest@1aafa419]" started-at="2024-05-15T08:49:20 EDT" name="launchApplication" finished-at="2024-05-15T08:49:24 EDT" duration-ms="4063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest@1aafa419]" started-at="2024-05-15T08:49:24 EDT" name="submitOrder" data-provider="getData" finished-at="2024-05-15T08:49:24 EDT" duration-ms="692" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Ilikeautomation@#07, product=ADIDIAS ORIGINAL, email=osama.nadeem@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at FrameWorks.SeleniumFrameWorkDesign.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:55)
+at FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest.submitOrder(SubmitOrderTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest@1aafa419]" started-at="2024-05-15T08:49:24 EDT" name="tearDown" finished-at="2024-05-15T08:49:25 EDT" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrameWorks.SeleniumFrameWorkDesign.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
